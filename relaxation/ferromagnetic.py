@@ -70,8 +70,7 @@ def create_simulation(mesh, simname):
 
 # Relax the system
 
-# We will simulate skyrmions for different mesh
-# discretisations
+# We will simulate for different mesh discretisations
 
 meshes = [[0.25, 80, 80],
           [0.5, 40, 40],
@@ -100,7 +99,7 @@ for f in folders:
         os.makedirs(f)
 
 for item in os.listdir('./'):
-    for f in folders[:-2]:
+    for f in folders[:-1]:
         if item.endswith(f):
             shutil.move(item, f)
     if item.endswith('.txt'):
