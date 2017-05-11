@@ -31,6 +31,8 @@ from fidimag.micro import UniformExchange
 from fidimag.micro import Zeeman
 # Import physical constants from fidimag
 import fidimag.common.constant as c
+# Import the NEB method
+from fidimag.common.nebm_geodesic import NEBM_Geodesic
 
 
 # NEBM Simulation Function ----------------------------------------------------
